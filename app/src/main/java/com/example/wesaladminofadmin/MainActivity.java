@@ -24,8 +24,8 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public class ButtonHandeler {
-        Context context;
+    class ButtonHandeler {
+        final Context context;
 
         ButtonHandeler(Context context) {
             this.context = context;

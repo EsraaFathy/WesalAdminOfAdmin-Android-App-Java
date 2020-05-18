@@ -35,7 +35,7 @@ import java.util.ArrayList;
 import java.util.Objects;
 
 public class EnterNewCharity extends AppCompatActivity {
-    ActivityEnterNewCharityBinding activityEnterNewCharityBinding;
+    private ActivityEnterNewCharityBinding activityEnterNewCharityBinding;
     private ArrayList<String> texts;
     private final static int PICK_UP_IMAGE_REQUEST = 1;
     private Uri imageUri;
