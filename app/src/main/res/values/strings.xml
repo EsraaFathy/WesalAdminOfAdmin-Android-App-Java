@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">WesalAdminOfAdmin</string>
+    <string name="charity_name">Charity Name</string>
+    <string name="enter_charity_name">Enter Charity Name</string>
+    <string name="map_location">Map Location</string>
+    <string name="longitude">long</string>
+    <string name="latitude">lat</string>
+    <string name="phone">Phone</string>
+    <string name="enter_phone_number">Enter Phone Number</string>
+    <string name="address">Address</string>
+    <string name="enter_charity_address">Enter Charity Address</string>
+    <string name="about">About</string>
+    <string name="write_some_about_the_charity">Write Some about The Charity</string>
+    <string name="upload_image">Upload Image</string>
+    <string name="image_logo">image logo</string>
+    <string name="submit">Submit</string>
+    <string name="add_new_charity">Add New Charity</string>
+    <string name="edit_charity">Edit Charity</string>
+    <string name="missed_data">Missed Data</string>
+    <string name="enter_correct_data">Enter Correct Data</string>
+    <string name="ok">Ok</string>
+    <string name="some_misssed_data">Some Data Missed</string>
+    <string name="this_process_has_done_before">this process has done before</string>
+</resources>

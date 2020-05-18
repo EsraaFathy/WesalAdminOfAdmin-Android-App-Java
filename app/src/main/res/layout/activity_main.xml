@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="ButoonHandlerName"
+            type="com.example.wesaladminofadmin.MainActivity.ButtonHandeler" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <Button
+            android:fontFamily="monospace"
+            android:onClick="@{ButoonHandlerName::addNewCharityButtonHandelr}"
+            android:id="@+id/addNewCharityButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginTop="30dp"
+            android:background="@color/purble"
+            android:paddingHorizontal="10dp"
+            android:text="@string/add_new_charity"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="28sp" />
+
+        <Button
+            android:onClick="@{ButoonHandlerName::editCharityButtonHandelr}"
+            android:id="@+id/editCharityButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginTop="30dp"
+            android:background="@color/purble"
+            android:fontFamily="monospace"
+            android:paddingHorizontal="10dp"
+            android:text="@string/edit_charity"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="28sp" />
+
+    </LinearLayout>
+</layout>

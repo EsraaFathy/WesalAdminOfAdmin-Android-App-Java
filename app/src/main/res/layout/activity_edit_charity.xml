@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp"
+    tools:context=".EditCharity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif-monospace"
+            android:text="@string/charity_name"
+            android:textColor="#370767"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/charityNameEditActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:hint="@string/enter_charity_name"
+            android:importantForAutofill="no"
+            android:inputType="textPersonName"
+            android:paddingHorizontal="5dp"
+            android:textColor="#000"
+            android:textSize="20sp"
+            tools:ignore="Autofill" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="serif-monospace"
+            android:text="@string/map_location"
+            android:textColor="#370767"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:fontFamily="serif-monospace"
+                android:text="@string/latitude"
+                android:textColor="#370767"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/latitudeEditActivity"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="monospace"
+                android:importantForAutofill="no"
+                android:inputType="numberDecimal"
+                android:textColor="#000"
+                android:textSize="17sp"
+                tools:ignore="Autofill,LabelFor" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:fontFamily="serif-monospace"
+                android:text="@string/longitude"
+                android:textColor="#370767"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/longitudeEditActivity"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="monospace"
+                android:importantForAutofill="no"
+                android:inputType="numberDecimal"
+                android:textColor="#000"
+                android:textSize="17sp"
+                tools:ignore="Autofill,LabelFor" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="serif-monospace"
+            android:text="@string/phone"
+            android:textColor="#370767"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/PhoneEditActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:hint="@string/enter_phone_number"
+            android:importantForAutofill="no"
+            android:inputType="phone"
+            android:paddingHorizontal="5dp"
+            android:textColor="#000"
+            android:textSize="20sp"
+            tools:ignore="Autofill" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="serif-monospace"
+            android:text="@string/address"
+            android:textColor="#370767"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/addressEditActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:hint="@string/enter_charity_address"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:paddingHorizontal="5dp"
+            android:textColor="#000"
+            android:textSize="20sp"
+            tools:ignore="Autofill" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="serif-monospace"
+            android:text="@string/about"
+            android:textColor="#370767"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/aboutEditActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:hint="@string/write_some_about_the_charity"
+            android:importantForAutofill="no"
+            android:inputType="textMultiLine"
+            android:paddingHorizontal="5dp"
+            android:textColor="#000"
+            android:textSize="20sp"
+            tools:ignore="Autofill" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/image_logo"
+                android:src="@drawable/ic_image_24dp" />
+
+            <Button
+                android:id="@+id/uploadImageButtonEditActivity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/upload_image"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_gravity="center"
+            android:background="#F1EFED"
+            android:contentDescription="@string/image_logo" />
+
+        <Button
+            android:id="@+id/submitButtonEditActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginTop="30dp"
+            android:background="@color/purble"
+            android:fontFamily="sans-serif-black"
+            android:paddingHorizontal="10dp"
+            android:text="@string/submit"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="28sp" />
+    </LinearLayout>
+
+
+</ScrollView>
